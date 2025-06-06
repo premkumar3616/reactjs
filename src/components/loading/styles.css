@@ -1,0 +1,44 @@
+.container{
+     display:  flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+}
+.product{
+    /* width: 200px;
+    height: 300px; */
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.product img{
+    width: 100px; /* Fixed width for product image */
+    height: 100px; /* Fixed height for product image */
+}
+.product h3{
+    font-size: 16px; /* Font size for product title */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text */
+}
+.product p{
+    font-size: 14px; /* Font size for product description */
+    color: #666; /* Gray color for description */
+    text-align: center; /* Center the text */
+}
+.btn-container button{
+    margin-top: 10px; /* Space above the button */
+    padding: 8px 16px; /* Padding for the button */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
