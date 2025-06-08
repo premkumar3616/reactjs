@@ -12,7 +12,7 @@ function Loading() {
         try {
             const response = await fetch(`https://dummyjson.com/products?limit=20&skip=${count === 0 ? 1 : count * 20}`);
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             if (data && data.products.length) {
                 setProducts((prevProducts) => [...prevProducts, ...data.products]);
             }

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Accordian from './components/accordin/';
 import Randomcolor from './components/hex random';
@@ -9,6 +8,10 @@ import Menu from './components/menu-view';
 import menus from './components/menu-view/data.js';
 import Qrcode from './components/qr-code/index.jsx';
 import Theme from './components/dark theme/index.jsx';
+import ScrollIndicator from './components/scroll-indicator/index.jsx';
+import Tabtest from './components/custom-tabs/tab-test.jsx';
+import ModalTest from './components/modal popup/index.jsx';
+import GithubProfileFinder from './components/github-finder/github.jsx';
 
 function App() {
   return (
@@ -25,6 +28,10 @@ function App() {
       <Menu menus = {menus} />
       <Qrcode />
       <Theme />
+      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />
+      <Tabtest />
+      <ModalTest />
+      <GithubProfileFinder />
     </div>
   );
 }
